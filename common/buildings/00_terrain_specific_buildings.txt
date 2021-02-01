@@ -7,6 +7,10 @@
 pastures_01 = {
 	construction_time = quick_construction_time
 
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
+
 	can_construct_potential = {
 		building_pastures_requirement_terrain = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
@@ -29,6 +33,7 @@ pastures_01 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 		modifier = {
 			factor = 0
 			building_farm_estates_requirement_terrain = yes
@@ -48,6 +53,10 @@ pastures_01 = {
 
 pastures_02 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_pastures_requirement_terrain = yes
@@ -73,11 +82,17 @@ pastures_02 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 pastures_03 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_pastures_requirement_terrain = yes
@@ -107,11 +122,17 @@ pastures_03 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 pastures_04 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_pastures_requirement_terrain = yes
@@ -142,11 +163,17 @@ pastures_04 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 pastures_05 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_pastures_requirement_terrain = yes
@@ -178,11 +205,17 @@ pastures_05 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 pastures_06 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_pastures_requirement_terrain = yes
@@ -217,11 +250,17 @@ pastures_06 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 pastures_07 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_pastures_requirement_terrain = yes
@@ -252,19 +291,25 @@ pastures_07 = {
 		county_opinion_add = 2
 	}
 	character_modifier = {
-		light_cavalry_toughness_add = 1
-		heavy_cavalry_toughness_add = 2
+		light_cavalry_toughness_mult = 0.02
+		heavy_cavalry_toughness_mult = 0.04
 	}
 	
 	next_building = pastures_08
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 pastures_08 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_pastures_requirement_terrain = yes
@@ -295,12 +340,14 @@ pastures_08 = {
 		county_opinion_add = 2
 	}
 	character_modifier = {
-		light_cavalry_toughness_add = 1
-		heavy_cavalry_toughness_add = 2
+		light_cavalry_toughness_mult = 0.02
+		heavy_cavalry_toughness_mult = 0.04
 	}
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
@@ -308,6 +355,10 @@ pastures_08 = {
 
 hunting_grounds_01 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_hunting_grounds_requirement_terrain = yes
@@ -320,14 +371,15 @@ hunting_grounds_01 = {
 	
 	cost_gold = cheap_building_tier_1_cost
 	
+	levy = poor_building_levy_tier_1
 	province_modifier = {
 		defender_advantage = normal_building_advantage_tier_1
 		monthly_income = poor_building_tax_tier_1
 	}
 	
 	character_modifier = {
-		light_cavalry_damage_add = 1
-		light_cavalry_pursuit_add = 1
+		light_cavalry_damage_mult = 0.02
+		light_cavalry_pursuit_mult = 0.02
 	}
 	
 	next_building = hunting_grounds_02
@@ -336,6 +388,7 @@ hunting_grounds_01 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 		modifier = {
 			factor = 0
 			building_cereal_fields_requirement_terrain = yes
@@ -358,6 +411,10 @@ hunting_grounds_01 = {
 hunting_grounds_02 = {
 	construction_time = quick_construction_time
 
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
+
 	can_construct_potential = {
 		building_hunting_grounds_requirement_terrain = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
@@ -379,22 +436,28 @@ hunting_grounds_02 = {
 	}
 	
 	character_modifier = {
-		skirmishers_pursuit_mult = 0.02
-		light_cavalry_damage_add = 2
-		light_cavalry_pursuit_add = 2
-		light_cavalry_screen_add = 1
-		light_cavalry_toughness_add = 1
+		skirmishers_pursuit_mult = 0.04
+		light_cavalry_damage_mult = 0.04
+		light_cavalry_pursuit_mult = 0.04
+		light_cavalry_screen_mult = 0.02
+		light_cavalry_toughness_mult = 0.02
 	}
 	
 	next_building = hunting_grounds_03
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 hunting_grounds_03 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_hunting_grounds_requirement_terrain = yes
@@ -421,22 +484,28 @@ hunting_grounds_03 = {
 	}
 	
 	character_modifier = {
-		skirmishers_pursuit_mult = 0.02
-		light_cavalry_damage_add = 3
-		light_cavalry_pursuit_add = 3
-		light_cavalry_screen_add = 1
-		light_cavalry_toughness_add = 1
+		skirmishers_pursuit_mult = 0.04
+		light_cavalry_damage_mult = 0.06
+		light_cavalry_pursuit_mult = 0.06
+		light_cavalry_screen_mult = 0.02
+		light_cavalry_toughness_mult = 0.02
 	}
 	
 	next_building = hunting_grounds_04
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 hunting_grounds_04 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_hunting_grounds_requirement_terrain = yes
@@ -463,22 +532,28 @@ hunting_grounds_04 = {
 	}
 	
 	character_modifier = {
-		skirmishers_pursuit_mult = 0.02
-		light_cavalry_damage_add = 4
-		light_cavalry_pursuit_add = 4
-		light_cavalry_screen_add = 2
-		light_cavalry_toughness_add = 2
+		skirmishers_pursuit_mult = 0.04
+		light_cavalry_damage_mult = 0.08
+		light_cavalry_pursuit_mult = 0.08
+		light_cavalry_screen_mult = 0.04
+		light_cavalry_toughness_mult = 0.04
 	}
 	
 	next_building = hunting_grounds_05
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 hunting_grounds_05 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_hunting_grounds_requirement_terrain = yes
@@ -505,11 +580,11 @@ hunting_grounds_05 = {
 	}
 	
 	character_modifier = {
-		skirmishers_pursuit_mult = 0.02
-		light_cavalry_damage_add = 5
-		light_cavalry_pursuit_add = 5
-		light_cavalry_screen_add = 2
-		light_cavalry_toughness_add = 2
+		skirmishers_pursuit_mult = 0.04
+		light_cavalry_damage_mult = 0.1
+		light_cavalry_pursuit_mult = 0.1
+		light_cavalry_screen_mult = 0.04
+		light_cavalry_toughness_mult = 0.04
 		men_at_arms_maintenance = -0.01
 	}
 	
@@ -517,11 +592,17 @@ hunting_grounds_05 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 hunting_grounds_06 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_hunting_grounds_requirement_terrain = yes
@@ -548,11 +629,11 @@ hunting_grounds_06 = {
 	}
 	
 	character_modifier = {
-		skirmishers_pursuit_mult = 0.02
-		light_cavalry_damage_add = 6
-		light_cavalry_pursuit_add = 6
-		light_cavalry_screen_add = 3
-		light_cavalry_toughness_add = 3
+		skirmishers_pursuit_mult = 0.04
+		light_cavalry_damage_mult = 0.12
+		light_cavalry_pursuit_mult = 0.12
+		light_cavalry_screen_mult = 0.06
+		light_cavalry_toughness_mult = 0.06
 		men_at_arms_maintenance = -0.01
 	}
 	
@@ -560,11 +641,17 @@ hunting_grounds_06 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 hunting_grounds_07 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_hunting_grounds_requirement_terrain = yes
@@ -591,11 +678,11 @@ hunting_grounds_07 = {
 	}
 	
 	character_modifier = {
-		skirmishers_pursuit_mult = 0.02
-		light_cavalry_damage_add = 7
-		light_cavalry_pursuit_add = 7
-		light_cavalry_screen_add = 3
-		light_cavalry_toughness_add = 3
+		skirmishers_pursuit_mult = 0.04
+		light_cavalry_damage_mult = 0.14
+		light_cavalry_pursuit_mult = 0.14
+		light_cavalry_screen_mult = 0.06
+		light_cavalry_toughness_mult = 0.06
 		men_at_arms_maintenance = -0.01
 	}
 	
@@ -607,11 +694,17 @@ hunting_grounds_07 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 hunting_grounds_08 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_hunting_grounds_requirement_terrain = yes
@@ -638,11 +731,11 @@ hunting_grounds_08 = {
 	}
 	
 	character_modifier = {
-		skirmishers_pursuit_mult = 0.02
-		light_cavalry_damage_add = 8
-		light_cavalry_pursuit_add = 8
-		light_cavalry_screen_add = 4
-		light_cavalry_toughness_add = 4
+		skirmishers_pursuit_mult = 0.04
+		light_cavalry_damage_mult = 0.16
+		light_cavalry_pursuit_mult = 0.16
+		light_cavalry_screen_mult = 0.08
+		light_cavalry_toughness_mult = 0.08
 		men_at_arms_maintenance = -0.01
 	}
 	
@@ -652,6 +745,8 @@ hunting_grounds_08 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
@@ -659,6 +754,10 @@ hunting_grounds_08 = {
 
 orchards_01 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_orchards_requirement_terrain = yes
@@ -682,11 +781,16 @@ orchards_01 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 orchards_02 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_orchards_requirement_terrain = yes
@@ -712,11 +816,17 @@ orchards_02 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 orchards_03 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_orchards_requirement_terrain = yes
@@ -746,11 +856,17 @@ orchards_03 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 orchards_04 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_orchards_requirement_terrain = yes
@@ -783,11 +899,17 @@ orchards_04 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 orchards_05 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_orchards_requirement_terrain = yes
@@ -821,11 +943,17 @@ orchards_05 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 orchards_06 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_orchards_requirement_terrain = yes
@@ -860,11 +988,17 @@ orchards_06 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 orchards_07 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_orchards_requirement_terrain = yes
@@ -902,11 +1036,17 @@ orchards_07 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 orchards_08 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_orchards_requirement_terrain = yes
@@ -942,6 +1082,8 @@ orchards_08 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
@@ -949,6 +1091,10 @@ orchards_08 = {
 
 farm_estates_01 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_farm_estates_requirement_terrain = yes
@@ -971,11 +1117,16 @@ farm_estates_01 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 farm_estates_02 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_farm_estates_requirement_terrain = yes
@@ -1001,11 +1152,17 @@ farm_estates_02 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 farm_estates_03 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_farm_estates_requirement_terrain = yes
@@ -1038,11 +1195,17 @@ farm_estates_03 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 farm_estates_04 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_farm_estates_requirement_terrain = yes
@@ -1075,11 +1238,17 @@ farm_estates_04 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 farm_estates_05 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_farm_estates_requirement_terrain = yes
@@ -1113,11 +1282,17 @@ farm_estates_05 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 farm_estates_06 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_farm_estates_requirement_terrain = yes
@@ -1152,11 +1327,17 @@ farm_estates_06 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 farm_estates_07 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_farm_estates_requirement_terrain = yes
@@ -1192,11 +1373,17 @@ farm_estates_07 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 farm_estates_08 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_farm_estates_requirement_terrain = yes
@@ -1229,6 +1416,8 @@ farm_estates_08 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
@@ -1236,6 +1425,10 @@ farm_estates_08 = {
 
 military_camps_01 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_military_camps_requirement_terrain = yes
@@ -1251,9 +1444,9 @@ military_camps_01 = {
 	levy = normal_building_levy_tier_1
 	
 	character_modifier = {
-		archers_damage_add = 2
-		skirmishers_damage_add = 1
-		skirmishers_pursuit_add = 1
+		archers_damage_mult = 0.04
+		skirmishers_damage_mult = 0.02
+		skirmishers_pursuit_mult = 0.02
 	}
 	
 	next_building = military_camps_02
@@ -1262,6 +1455,7 @@ military_camps_01 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 		modifier = {
 			factor = 0
 			building_barracks_requirement_terrain = yes
@@ -1307,6 +1501,10 @@ military_camps_01 = {
 military_camps_02 = {
 	construction_time = quick_construction_time
 
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
+
 	can_construct_potential = {
 		building_military_camps_requirement_terrain = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
@@ -1324,11 +1522,11 @@ military_camps_02 = {
 	levy = normal_building_levy_tier_2
 	
 	character_modifier = {
-		archers_damage_add = 3
-		skirmishers_damage_add = 2
-		skirmishers_pursuit_add = 2
-		archers_toughness_add = 1
-		skirmishers_toughness_add = 1
+		archers_damage_mult = 0.06
+		skirmishers_damage_mult = 0.04
+		skirmishers_pursuit_mult = 0.04
+		archers_toughness_mult = 0.02
+		skirmishers_toughness_mult = 0.02
 	}
 	
 	county_modifier = {
@@ -1339,11 +1537,16 @@ military_camps_02 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 military_camps_03 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_military_camps_requirement_terrain = yes
@@ -1369,22 +1572,27 @@ military_camps_03 = {
 	}
 	
 	character_modifier = {
-		archers_damage_add = 4
-		skirmishers_damage_add = 3
-		skirmishers_pursuit_add = 3
-		archers_toughness_add = 1
-		skirmishers_toughness_add = 1
+		archers_damage_mult = 0.08
+		skirmishers_damage_mult = 0.06
+		skirmishers_pursuit_mult = 0.06
+		archers_toughness_mult = 0.02
+		skirmishers_toughness_mult = 0.02
 	}
 	
 	next_building = military_camps_04
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 military_camps_04 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_military_camps_requirement_terrain = yes
@@ -1411,22 +1619,27 @@ military_camps_04 = {
 	}
 	
 	character_modifier = {
-		archers_damage_add = 5
-		skirmishers_damage_add = 4
-		skirmishers_pursuit_add = 4
-		archers_toughness_add = 2
-		skirmishers_toughness_add = 2
+		archers_damage_mult = 0.1
+		skirmishers_damage_mult = 0.08
+		skirmishers_pursuit_mult = 0.08
+		archers_toughness_mult = 0.04
+		skirmishers_toughness_mult = 0.04
 	}
 	
 	next_building = military_camps_05
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 military_camps_05 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_military_camps_requirement_terrain = yes
@@ -1453,23 +1666,28 @@ military_camps_05 = {
 	}
 	
 	character_modifier = {
-		archers_damage_add = 6
-		skirmishers_damage_add = 5
-		skirmishers_pursuit_add = 5
-		archers_toughness_add = 2
-		skirmishers_toughness_add = 2
-		light_cavalry_toughness_add = 1
+		archers_damage_mult = 0.12
+		skirmishers_damage_mult = 0.1
+		skirmishers_pursuit_mult = 0.1
+		archers_toughness_mult = 0.04
+		skirmishers_toughness_mult = 0.04
+		light_cavalry_toughness_mult = 0.02
 	}
 	
 	next_building = military_camps_06
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 military_camps_06 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_military_camps_requirement_terrain = yes
@@ -1496,12 +1714,12 @@ military_camps_06 = {
 	}
 	
 	character_modifier = {
-		archers_damage_add = 7
-		skirmishers_damage_add = 6
-		skirmishers_pursuit_add = 6
-		archers_toughness_add = 3
-		skirmishers_toughness_add = 3
-		light_cavalry_toughness_add = 1
+		archers_damage_mult = 0.14
+		skirmishers_damage_mult = 0.12
+		skirmishers_pursuit_mult = 0.12
+		archers_toughness_mult = 0.06
+		skirmishers_toughness_mult = 0.06
+		light_cavalry_toughness_mult = 0.02
 	}
 	
 	province_modifier = {
@@ -1512,11 +1730,16 @@ military_camps_06 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 military_camps_07 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_military_camps_requirement_terrain = yes
@@ -1543,12 +1766,12 @@ military_camps_07 = {
 	}
 	
 	character_modifier = {
-		archers_damage_add = 8
-		skirmishers_damage_add = 7
-		skirmishers_pursuit_add = 7
-		archers_toughness_add = 3
-		skirmishers_toughness_add = 3
-		light_cavalry_toughness_add = 1
+		archers_damage_mult = 0.16
+		skirmishers_damage_mult = 0.14
+		skirmishers_pursuit_mult = 0.14
+		archers_toughness_mult = 0.06
+		skirmishers_toughness_mult = 0.06
+		light_cavalry_toughness_mult = 0.02
 	}
 	
 	province_modifier = {
@@ -1559,11 +1782,16 @@ military_camps_07 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 military_camps_08 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_military_camps_requirement_terrain = yes
@@ -1590,14 +1818,14 @@ military_camps_08 = {
 	}
 	
 	character_modifier = {
-		archers_damage_add = 9
-		skirmishers_damage_add = 8
-		skirmishers_pursuit_add = 8
-		archers_toughness_add = 4
-		skirmishers_toughness_add = 4
-		light_cavalry_toughness_add = 1
-		pikemen_toughness_add = 1
-		heavy_infantry_toughness_add = 1
+		archers_damage_mult = 0.18
+		skirmishers_damage_mult = 0.16
+		skirmishers_pursuit_mult = 0.16
+		archers_toughness_mult = 0.08
+		skirmishers_toughness_mult = 0.08
+		light_cavalry_toughness_mult = 0.02
+		pikemen_toughness_mult = 0.02
+		heavy_infantry_toughness_mult = 0.02
 	}
 	
 	province_modifier = {
@@ -1606,6 +1834,7 @@ military_camps_08 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
@@ -1613,6 +1842,10 @@ military_camps_08 = {
 
 regimental_grounds_01 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_regimental_grounds_requirement_terrain = yes
@@ -1629,6 +1862,7 @@ regimental_grounds_01 = {
 	
 	character_modifier = {
 		men_at_arms_maintenance = -0.002
+		heavy_cavalry_damage_mult = 0.04
 	}
 	
 	province_modifier = {
@@ -1641,6 +1875,7 @@ regimental_grounds_01 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 		modifier = {
 			add = -99
 			has_building_or_higher = city_01
@@ -1650,6 +1885,10 @@ regimental_grounds_01 = {
 
 regimental_grounds_02 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_regimental_grounds_requirement_terrain = yes
@@ -1669,6 +1908,8 @@ regimental_grounds_02 = {
 	
 	character_modifier = {
 		men_at_arms_maintenance = -0.004
+		heavy_cavalry_damage_mult = 0.06
+		heavy_cavalry_toughness_mult = 0.04
 	}
 	
 	province_modifier = {
@@ -1683,11 +1924,16 @@ regimental_grounds_02 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 regimental_grounds_03 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_regimental_grounds_requirement_terrain = yes
@@ -1710,10 +1956,12 @@ regimental_grounds_03 = {
 	
 	character_modifier = {
 		men_at_arms_maintenance = -0.006
-		heavy_infantry_toughness_add = 1
-		pikemen_toughness_add = 1
-		heavy_infantry_damage_add = 2
-		pikemen_damage_add = 2
+		heavy_cavalry_damage_mult = 0.08
+		heavy_cavalry_toughness_mult = 0.04
+		heavy_infantry_toughness_mult = 0.02
+		pikemen_toughness_mult = 0.02
+		heavy_infantry_damage_mult = 0.04
+		pikemen_damage_mult = 0.04
 	}
 	
 	province_modifier = {
@@ -1728,11 +1976,16 @@ regimental_grounds_03 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 regimental_grounds_04 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_regimental_grounds_requirement_terrain = yes
@@ -1755,10 +2008,12 @@ regimental_grounds_04 = {
 	
 	character_modifier = {
 		men_at_arms_maintenance = -0.008
-		heavy_infantry_toughness_add = 1
-		pikemen_toughness_add = 1
-		heavy_infantry_damage_add = 2
-		pikemen_damage_add = 2
+		heavy_cavalry_damage_mult = 0.1
+		heavy_cavalry_toughness_mult = 0.06
+		heavy_infantry_toughness_mult = 0.02
+		pikemen_toughness_mult = 0.02
+		heavy_infantry_damage_mult = 0.04
+		pikemen_damage_mult = 0.04
 	}
 	
 	province_modifier = {
@@ -1774,11 +2029,16 @@ regimental_grounds_04 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 regimental_grounds_05 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_regimental_grounds_requirement_terrain = yes
@@ -1801,10 +2061,12 @@ regimental_grounds_05 = {
 	
 	character_modifier = {
 		men_at_arms_maintenance = -0.01
-		heavy_infantry_toughness_add = 1
-		pikemen_toughness_add = 1
-		heavy_infantry_damage_add = 2
-		pikemen_damage_add = 2
+		heavy_cavalry_damage_mult = 0.12
+		heavy_cavalry_toughness_mult = 0.06
+		heavy_infantry_toughness_mult = 0.02
+		pikemen_toughness_mult = 0.02
+		heavy_infantry_damage_mult = 0.04
+		pikemen_damage_mult = 0.04
 	}
 	
 	province_modifier = {
@@ -1821,11 +2083,16 @@ regimental_grounds_05 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 regimental_grounds_06 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_regimental_grounds_requirement_terrain = yes
@@ -1848,10 +2115,12 @@ regimental_grounds_06 = {
 	
 	character_modifier = {
 		men_at_arms_maintenance = -0.012
-		heavy_infantry_toughness_add = 2
-		pikemen_toughness_add = 2
-		heavy_infantry_damage_add = 3
-		pikemen_damage_add = 3
+		heavy_cavalry_damage_mult = 0.14
+		heavy_cavalry_toughness_mult = 0.08
+		heavy_infantry_toughness_mult = 0.04
+		pikemen_toughness_mult = 0.04
+		heavy_infantry_damage_mult = 0.06
+		pikemen_damage_mult = 0.06
 	}
 	
 	province_modifier = {
@@ -1868,11 +2137,16 @@ regimental_grounds_06 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 regimental_grounds_07 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_regimental_grounds_requirement_terrain = yes
@@ -1895,10 +2169,12 @@ regimental_grounds_07 = {
 	
 	character_modifier = {
 		men_at_arms_maintenance = -0.014
-		heavy_infantry_toughness_add = 2
-		pikemen_toughness_add = 2
-		heavy_infantry_damage_add = 3
-		pikemen_damage_add = 3
+		heavy_cavalry_damage_mult = 0.16
+		heavy_cavalry_toughness_mult = 0.08
+		heavy_infantry_toughness_mult = 0.04
+		pikemen_toughness_mult = 0.04
+		heavy_infantry_damage_mult = 0.06
+		pikemen_damage_mult = 0.06
 		knight_limit = 1
 	}
 	
@@ -1916,11 +2192,16 @@ regimental_grounds_07 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 regimental_grounds_08 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_regimental_grounds_requirement_terrain = yes
@@ -1943,10 +2224,12 @@ regimental_grounds_08 = {
 	
 	character_modifier = {
 		men_at_arms_maintenance = -0.016
-		heavy_infantry_toughness_add = 2
-		pikemen_toughness_add = 2
-		heavy_infantry_damage_add = 3
-		pikemen_damage_add = 3
+		heavy_cavalry_damage_mult = 0.18
+		heavy_cavalry_toughness_mult = 0.1
+		heavy_infantry_toughness_mult = 0.04
+		pikemen_toughness_mult = 0.04
+		heavy_infantry_damage_mult = 0.06
+		pikemen_damage_mult = 0.06
 		knight_limit = 1
 		army_maintenance_mult = -0.01
 	}
@@ -1963,6 +2246,7 @@ regimental_grounds_08 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
@@ -1970,6 +2254,10 @@ regimental_grounds_08 = {
 
 ramparts_01 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_ramparts_requirement_terrain = yes
@@ -1994,6 +2282,12 @@ ramparts_01 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		modifier = {
+			factor = 5
+			free_building_slots <= 3
+			scope:holder.capital_province = this
+		}
 		modifier = {
 			factor = 5
 			free_building_slots <= 2
@@ -2007,6 +2301,10 @@ ramparts_01 = {
 
 ramparts_02 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_ramparts_requirement_terrain = yes
@@ -2033,11 +2331,16 @@ ramparts_02 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 ramparts_03 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_ramparts_requirement_terrain = yes
@@ -2068,11 +2371,16 @@ ramparts_03 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 ramparts_04 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_ramparts_requirement_terrain = yes
@@ -2106,11 +2414,16 @@ ramparts_04 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 ramparts_05 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_ramparts_requirement_terrain = yes
@@ -2141,18 +2454,23 @@ ramparts_05 = {
 	}
 	
 	character_modifier = {
-		archers_damage_add = 2
+		archers_damage_mult = 0.04
 	}
 	
 	next_building = ramparts_06
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 ramparts_06 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_ramparts_requirement_terrain = yes
@@ -2183,19 +2501,24 @@ ramparts_06 = {
 	}
 	
 	character_modifier = {
-		archers_damage_add = 2
-		skirmishers_damage_add = 1
+		archers_damage_mult = 0.04
+		skirmishers_damage_mult = 0.02
 	}
 	
 	next_building = ramparts_07
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 ramparts_07 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_ramparts_requirement_terrain = yes
@@ -2226,20 +2549,25 @@ ramparts_07 = {
 	}
 	
 	character_modifier = {
-		archers_damage_add = 2
-		archers_toughness_add = 1
-		skirmishers_damage_add = 1
+		archers_damage_mult = 0.04
+		archers_toughness_mult = 0.02
+		skirmishers_damage_mult = 0.02
 	}
 	
 	next_building = ramparts_08
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 ramparts_08 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_ramparts_requirement_terrain = yes
@@ -2270,13 +2598,14 @@ ramparts_08 = {
 	}
 	
 	character_modifier = {
-		archers_damage_add = 3
-		archers_toughness_add = 1
-		skirmishers_damage_add = 1
+		archers_damage_mult = 0.06
+		archers_toughness_mult = 0.02
+		skirmishers_damage_mult = 0.02
 	}
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
@@ -2284,6 +2613,10 @@ ramparts_08 = {
 
 curtain_walls_01 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_curtain_walls_requirement_terrain = yes
@@ -2308,6 +2641,12 @@ curtain_walls_01 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		modifier = {
+			factor = 5
+			free_building_slots <= 3
+			scope:holder.capital_province = this
+		}
 		modifier = {
 			factor = 5
 			free_building_slots <= 2
@@ -2321,6 +2660,10 @@ curtain_walls_01 = {
 
 curtain_walls_02 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_curtain_walls_requirement_terrain = yes
@@ -2350,11 +2693,17 @@ curtain_walls_02 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 curtain_walls_03 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_curtain_walls_requirement_terrain = yes
@@ -2384,18 +2733,24 @@ curtain_walls_03 = {
 	}
 	
 	character_modifier = {
-		archers_damage_add = 1
+		archers_damage_mult = 0.02
 	}
 	
 	next_building = curtain_walls_04
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 curtain_walls_04 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_curtain_walls_requirement_terrain = yes
@@ -2425,18 +2780,24 @@ curtain_walls_04 = {
 	}
 	
 	character_modifier = {
-		archers_damage_add = 1
+		archers_damage_mult = 0.02
 	}
 	
 	next_building = curtain_walls_05
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 curtain_walls_05 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_curtain_walls_requirement_terrain = yes
@@ -2467,18 +2828,24 @@ curtain_walls_05 = {
 	}
 	
 	character_modifier = {
-		archers_damage_add = 1
+		archers_damage_mult = 0.02
 	}
 	
 	next_building = curtain_walls_06
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 curtain_walls_06 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_curtain_walls_requirement_terrain = yes
@@ -2510,18 +2877,24 @@ curtain_walls_06 = {
 	}
 	
 	character_modifier = {
-		archers_damage_add = 1
+		archers_damage_mult = 0.02
 	}
 	
 	next_building = curtain_walls_07
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 curtain_walls_07 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_curtain_walls_requirement_terrain = yes
@@ -2553,18 +2926,24 @@ curtain_walls_07 = {
 	}
 	
 	character_modifier = {
-		archers_damage_add = 1
+		archers_damage_mult = 0.02
 	}
 	
 	next_building = curtain_walls_08
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 curtain_walls_08 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_curtain_walls_requirement_terrain = yes
@@ -2596,11 +2975,13 @@ curtain_walls_08 = {
 	}
 	
 	character_modifier = {
-		archers_damage_add = 1
+		archers_damage_mult = 0.02
 	}
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
@@ -2608,6 +2989,10 @@ curtain_walls_08 = {
 
 watchtowers_01 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_watchtowers_requirement_terrain = yes
@@ -2632,6 +3017,12 @@ watchtowers_01 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		modifier = {
+			factor = 5
+			free_building_slots <= 3
+			scope:holder.capital_province = this
+		}
 		modifier = {
 			factor = 5
 			free_building_slots <= 2
@@ -2645,6 +3036,10 @@ watchtowers_01 = {
 
 watchtowers_02 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_watchtowers_requirement_terrain = yes
@@ -2674,11 +3069,16 @@ watchtowers_02 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 watchtowers_03 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_watchtowers_requirement_terrain = yes
@@ -2704,7 +3104,7 @@ watchtowers_03 = {
 	}
 	
 	character_modifier = {
-		archers_damage_add = 2
+		archers_damage_mult = 0.04
 	}
 	
 	county_modifier = {
@@ -2715,11 +3115,16 @@ watchtowers_03 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 watchtowers_04 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_watchtowers_requirement_terrain = yes
@@ -2746,7 +3151,7 @@ watchtowers_04 = {
 	}
 	
 	character_modifier = {
-		archers_damage_add = 2
+		archers_damage_mult = 0.04
 	}
 	
 	county_modifier = {
@@ -2757,11 +3162,16 @@ watchtowers_04 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 watchtowers_05 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_watchtowers_requirement_terrain = yes
@@ -2788,7 +3198,7 @@ watchtowers_05 = {
 	}
 	
 	character_modifier = {
-		archers_damage_add = 2
+		archers_damage_mult = 0.04
 	}
 	
 	county_modifier = {
@@ -2799,11 +3209,16 @@ watchtowers_05 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 watchtowers_06 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_watchtowers_requirement_terrain = yes
@@ -2830,8 +3245,8 @@ watchtowers_06 = {
 	}
 	
 	character_modifier = {
-		archers_damage_add = 3
-		archers_toughness_add = 1
+		archers_damage_mult = 0.06
+		archers_toughness_mult = 0.02
 	}
 	
 	county_modifier = {
@@ -2843,11 +3258,16 @@ watchtowers_06 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 watchtowers_07 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_watchtowers_requirement_terrain = yes
@@ -2874,8 +3294,8 @@ watchtowers_07 = {
 	}
 	
 	character_modifier = {
-		archers_damage_add = 3
-		archers_toughness_add = 1
+		archers_damage_mult = 0.06
+		archers_toughness_mult = 0.02
 	}
 	
 	county_modifier = {
@@ -2887,11 +3307,16 @@ watchtowers_07 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 watchtowers_08 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_watchtowers_requirement_terrain = yes
@@ -2918,8 +3343,8 @@ watchtowers_08 = {
 	}
 	
 	character_modifier = {
-		archers_damage_add = 3
-		archers_toughness_add = 1
+		archers_damage_mult = 0.06
+		archers_toughness_mult = 0.02
 	}
 	
 	county_modifier = {
@@ -2929,6 +3354,7 @@ watchtowers_08 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
@@ -2936,6 +3362,10 @@ watchtowers_08 = {
 
 cereal_fields_01 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_cereal_fields_requirement_terrain = yes
@@ -2958,6 +3388,7 @@ cereal_fields_01 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 		modifier = {
 			factor = 0
 			building_farm_estates_requirement_terrain = yes
@@ -2977,6 +3408,10 @@ cereal_fields_01 = {
 
 cereal_fields_02 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_cereal_fields_requirement_terrain = yes
@@ -3004,11 +3439,17 @@ cereal_fields_02 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 cereal_fields_03 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_cereal_fields_requirement_terrain = yes
@@ -3040,11 +3481,17 @@ cereal_fields_03 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 cereal_fields_04 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_cereal_fields_requirement_terrain = yes
@@ -3077,11 +3524,17 @@ cereal_fields_04 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 cereal_fields_05 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_cereal_fields_requirement_terrain = yes
@@ -3115,11 +3568,17 @@ cereal_fields_05 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 cereal_fields_06 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_cereal_fields_requirement_terrain = yes
@@ -3154,11 +3613,17 @@ cereal_fields_06 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 cereal_fields_07 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_cereal_fields_requirement_terrain = yes
@@ -3194,11 +3659,17 @@ cereal_fields_07 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 cereal_fields_08 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_cereal_fields_requirement_terrain = yes
@@ -3232,6 +3703,8 @@ cereal_fields_08 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
@@ -3239,6 +3712,10 @@ cereal_fields_08 = {
 
 outposts_01 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_outposts_requirement_terrain = yes
@@ -3262,6 +3739,7 @@ outposts_01 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 		modifier = {
 			factor = 0
 			building_barracks_requirement_terrain = yes
@@ -3285,6 +3763,10 @@ outposts_01 = {
 
 outposts_02 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_outposts_requirement_terrain = yes
@@ -3312,11 +3794,16 @@ outposts_02 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 outposts_03 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_outposts_requirement_terrain = yes
@@ -3343,18 +3830,23 @@ outposts_03 = {
 		monthly_county_control_change_add = 0.1
 	}
 	character_modifier = {
-		skirmishers_damage_add = 1
+		skirmishers_damage_mult = 0.02
 	}
 	
 	next_building = outposts_04
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 outposts_04 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_outposts_requirement_terrain = yes
@@ -3382,19 +3874,24 @@ outposts_04 = {
 	}
 	
 	character_modifier = {
-		skirmishers_damage_add = 1
-		skirmishers_pursuit_add = 1
+		skirmishers_damage_mult = 0.02
+		skirmishers_pursuit_mult = 0.02
 	}
 	
 	next_building = outposts_05
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 outposts_05 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_outposts_requirement_terrain = yes
@@ -3423,19 +3920,24 @@ outposts_05 = {
 	}
 	
 	character_modifier = {
-		skirmishers_damage_add = 1
-		skirmishers_pursuit_add = 1
+		skirmishers_damage_mult = 0.02
+		skirmishers_pursuit_mult = 0.02
 	}
 	
 	next_building = outposts_06
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 outposts_06 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_outposts_requirement_terrain = yes
@@ -3464,20 +3966,25 @@ outposts_06 = {
 	}
 	
 	character_modifier = {
-		archers_damage_add = 2
-		skirmishers_damage_add = 1
-		skirmishers_pursuit_add = 1
+		archers_damage_mult = 0.04
+		skirmishers_damage_mult = 0.02
+		skirmishers_pursuit_mult = 0.02
 	}
 	
 	next_building = outposts_07
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 outposts_07 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_outposts_requirement_terrain = yes
@@ -3506,22 +4013,27 @@ outposts_07 = {
 	}
 	
 	character_modifier = {
-		archers_damage_add = 2
-		skirmishers_damage_add = 1
-		skirmishers_pursuit_add = 1
-		skirmishers_toughness_add = 1
-		skirmishers_screen_add = 1
+		archers_damage_mult = 0.04
+		skirmishers_damage_mult = 0.02
+		skirmishers_pursuit_mult = 0.02
+		skirmishers_toughness_mult = 0.02
+		skirmishers_screen_mult = 0.02
 	}
 	
 	next_building = outposts_08
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 outposts_08 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_outposts_requirement_terrain = yes
@@ -3551,15 +4063,16 @@ outposts_08 = {
 	}
 	
 	character_modifier = {
-		archers_damage_add = 2
-		skirmishers_damage_add = 1
-		skirmishers_pursuit_add = 1
-		skirmishers_toughness_add = 1
-		skirmishers_screen_add = 1
+		archers_damage_mult = 0.04
+		skirmishers_damage_mult = 0.02
+		skirmishers_pursuit_mult = 0.02
+		skirmishers_toughness_mult = 0.02
+		skirmishers_screen_mult = 0.02
 	}
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
@@ -3567,6 +4080,10 @@ outposts_08 = {
 
 barracks_01 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_barracks_requirement_terrain = yes
@@ -3582,8 +4099,8 @@ barracks_01 = {
 	levy = good_building_levy_tier_1
 	
 	character_modifier = {
-		pikemen_damage_add = 2
-		heavy_infantry_damage_add = 2
+		pikemen_damage_mult = 0.04
+		heavy_infantry_damage_mult = 0.04
 	}
 	
 	next_building = barracks_02
@@ -3592,6 +4109,7 @@ barracks_01 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 		modifier = {
 			factor = 0
 			building_regimental_grounds_requirement_terrain = yes
@@ -3608,6 +4126,10 @@ barracks_01 = {
 
 barracks_02 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_barracks_requirement_terrain = yes
@@ -3626,21 +4148,26 @@ barracks_02 = {
 	levy = good_building_levy_tier_2
 	
 	character_modifier = {
-		pikemen_damage_add = 3
-		heavy_infantry_damage_add = 3
-		pikemen_toughness_add = 2
-		heavy_infantry_toughness_add = 2
+		pikemen_damage_mult = 0.06
+		heavy_infantry_damage_mult = 0.06
+		pikemen_toughness_mult = 0.04
+		heavy_infantry_toughness_mult = 0.04
 	}
 	
 	next_building = barracks_03
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 barracks_03 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_barracks_requirement_terrain = yes
@@ -3662,10 +4189,10 @@ barracks_03 = {
 	levy = good_building_levy_tier_3
 	
 	character_modifier = {
-		pikemen_damage_add = 4
-		heavy_infantry_damage_add = 4
-		pikemen_toughness_add = 2
-		heavy_infantry_toughness_add = 2
+		pikemen_damage_mult = 0.08
+		heavy_infantry_damage_mult = 0.08
+		pikemen_toughness_mult = 0.04
+		heavy_infantry_toughness_mult = 0.04
 	}
 	
 	county_modifier = {
@@ -3676,11 +4203,16 @@ barracks_03 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 barracks_04 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_barracks_requirement_terrain = yes
@@ -3702,10 +4234,10 @@ barracks_04 = {
 	levy = good_building_levy_tier_4
 	
 	character_modifier = {
-		pikemen_damage_add = 5
-		heavy_infantry_damage_add = 5
-		pikemen_toughness_add = 3
-		heavy_infantry_toughness_add = 3
+		pikemen_damage_mult = 0.1
+		heavy_infantry_damage_mult = 0.1
+		pikemen_toughness_mult = 0.06
+		heavy_infantry_toughness_mult = 0.06
 	}
 	
 	county_modifier = {
@@ -3716,11 +4248,16 @@ barracks_04 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 barracks_05 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_barracks_requirement_terrain = yes
@@ -3746,21 +4283,26 @@ barracks_05 = {
 	}
 	
 	character_modifier = {
-		pikemen_damage_add = 6
-		heavy_infantry_damage_add = 6
-		pikemen_toughness_add = 3
-		heavy_infantry_toughness_add = 3
+		pikemen_damage_mult = 0.12
+		heavy_infantry_damage_mult = 0.12
+		pikemen_toughness_mult = 0.06
+		heavy_infantry_toughness_mult = 0.06
 	}
 	
 	next_building = barracks_06
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 barracks_06 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_barracks_requirement_terrain = yes
@@ -3786,21 +4328,26 @@ barracks_06 = {
 	}
 	
 	character_modifier = {
-		pikemen_damage_add = 7
-		heavy_infantry_damage_add = 7
-		pikemen_toughness_add = 4
-		heavy_infantry_toughness_add = 4
+		pikemen_damage_mult = 0.14
+		heavy_infantry_damage_mult = 0.14
+		pikemen_toughness_mult = 0.08
+		heavy_infantry_toughness_mult = 0.08
 	}
 	
 	next_building = barracks_07
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 barracks_07 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_barracks_requirement_terrain = yes
@@ -3826,10 +4373,10 @@ barracks_07 = {
 	}
 	
 	character_modifier = {
-		pikemen_damage_add = 8
-		heavy_infantry_damage_add = 8
-		pikemen_toughness_add = 4
-		heavy_infantry_toughness_add = 4
+		pikemen_damage_mult = 0.16
+		heavy_infantry_damage_mult = 0.16
+		pikemen_toughness_mult = 0.08
+		heavy_infantry_toughness_mult = 0.08
 	}
 	
 	province_modifier = {
@@ -3840,11 +4387,16 @@ barracks_07 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 barracks_08 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_barracks_requirement_terrain = yes
@@ -3870,10 +4422,10 @@ barracks_08 = {
 	}
 	
 	character_modifier = {
-		pikemen_damage_add = 9
-		heavy_infantry_damage_add = 9
-		pikemen_toughness_add = 5
-		heavy_infantry_toughness_add = 5
+		pikemen_damage_mult = 0.18
+		heavy_infantry_damage_mult = 0.18
+		pikemen_toughness_mult = 0.1
+		heavy_infantry_toughness_mult = 0.1
 	}
 	
 	province_modifier = {
@@ -3882,6 +4434,7 @@ barracks_08 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
@@ -3889,6 +4442,10 @@ barracks_08 = {
 
 camel_farms_01 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_camel_farms_requirement_terrain = yes
@@ -3903,8 +4460,8 @@ camel_farms_01 = {
 	
 	levy = small_building_levy_tier_1
 	character_modifier = {
-		light_cavalry_damage_add = 1
-		light_cavalry_pursuit_add = 1
+		light_cavalry_damage_mult = 0.02
+		light_cavalry_pursuit_mult = 0.02
 		knight_limit = 1
 	}
 	
@@ -3914,6 +4471,7 @@ camel_farms_01 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 		modifier = {
 			factor = 0
 			building_regimental_grounds_requirement_terrain = yes
@@ -3926,6 +4484,10 @@ camel_farms_01 = {
 
 camel_farms_02 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_camel_farms_requirement_terrain = yes
@@ -3943,10 +4505,10 @@ camel_farms_02 = {
 	
 	levy = small_building_levy_tier_2
 	character_modifier = {
-		light_cavalry_damage_add = 2
-		light_cavalry_pursuit_add = 2
-		light_cavalry_toughness_add = 1
-		light_cavalry_screen_add = 1
+		light_cavalry_damage_mult = 0.04
+		light_cavalry_pursuit_mult = 0.04
+		light_cavalry_toughness_mult = 0.02
+		light_cavalry_screen_mult = 0.02
 		knight_limit = 1
 	}
 	
@@ -3958,11 +4520,16 @@ camel_farms_02 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 camel_farms_03 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_camel_farms_requirement_terrain = yes
@@ -3983,12 +4550,12 @@ camel_farms_03 = {
 	
 	levy = small_building_levy_tier_3
 	character_modifier = {
-		light_cavalry_damage_add = 3
-		light_cavalry_pursuit_add = 3
-		light_cavalry_toughness_add = 1
-		light_cavalry_screen_add = 1
+		light_cavalry_damage_mult = 0.06
+		light_cavalry_pursuit_mult = 0.06
+		light_cavalry_toughness_mult = 0.02
+		light_cavalry_screen_mult = 0.02
 		knight_limit = 2
-		archers_damage_add = 1
+		archers_damage_mult = 0.02
 	}
 	
 	county_modifier = {
@@ -3999,11 +4566,16 @@ camel_farms_03 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 camel_farms_04 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_camel_farms_requirement_terrain = yes
@@ -4025,12 +4597,12 @@ camel_farms_04 = {
 	levy = small_building_levy_tier_4
 	
 	character_modifier = {
-		light_cavalry_damage_add = 4
-		light_cavalry_pursuit_add = 4
-		light_cavalry_toughness_add = 2
-		light_cavalry_screen_add = 2
+		light_cavalry_damage_mult = 0.08
+		light_cavalry_pursuit_mult = 0.08
+		light_cavalry_toughness_mult = 0.04
+		light_cavalry_screen_mult = 0.04
 		knight_limit = 2
-		archers_damage_add = 1
+		archers_damage_mult = 0.02
 	}
 	
 	province_modifier = {
@@ -4045,11 +4617,16 @@ camel_farms_04 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 camel_farms_05 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_camel_farms_requirement_terrain = yes
@@ -4070,12 +4647,12 @@ camel_farms_05 = {
 	
 	levy = small_building_levy_tier_5
 	character_modifier = {
-		light_cavalry_damage_add = 5
-		light_cavalry_pursuit_add = 5
-		light_cavalry_toughness_add = 2
-		light_cavalry_screen_add = 2
+		light_cavalry_damage_mult = 0.1
+		light_cavalry_pursuit_mult = 0.1
+		light_cavalry_toughness_mult = 0.04
+		light_cavalry_screen_mult = 0.04
 		knight_limit = 3
-		archers_damage_add = 1
+		archers_damage_mult = 0.02
 		knight_effectiveness_mult = 0.05
 	}
 	
@@ -4091,11 +4668,16 @@ camel_farms_05 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 camel_farms_06 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_camel_farms_requirement_terrain = yes
@@ -4116,12 +4698,12 @@ camel_farms_06 = {
 	
 	levy = small_building_levy_tier_6
 	character_modifier = {
-		light_cavalry_damage_add = 6
-		light_cavalry_pursuit_add = 6
-		light_cavalry_toughness_add = 3
-		light_cavalry_screen_add = 3
+		light_cavalry_damage_mult = 0.12
+		light_cavalry_pursuit_mult = 0.12
+		light_cavalry_toughness_mult = 0.06
+		light_cavalry_screen_mult = 0.06
 		knight_limit = 3
-		archers_damage_add = 1
+		archers_damage_mult = 0.02
 		knight_effectiveness_mult = 0.05
 	}
 	
@@ -4138,11 +4720,16 @@ camel_farms_06 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 camel_farms_07 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_camel_farms_requirement_terrain = yes
@@ -4163,13 +4750,13 @@ camel_farms_07 = {
 	
 	levy = small_building_levy_tier_7
 	character_modifier = {
-		light_cavalry_damage_add = 7
-		light_cavalry_pursuit_add = 7
-		light_cavalry_toughness_add = 3
-		light_cavalry_screen_add = 3
+		light_cavalry_damage_mult = 0.14
+		light_cavalry_pursuit_mult = 0.14
+		light_cavalry_toughness_mult = 0.06
+		light_cavalry_screen_mult = 0.06
 		knight_limit = 4
-		heavy_cavalry_toughness_add = 4
-		archers_damage_add = 1
+		heavy_cavalry_toughness_mult = 0.08
+		archers_damage_mult = 0.02
 		knight_effectiveness_mult = 0.05
 	}
 	
@@ -4186,11 +4773,16 @@ camel_farms_07 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 camel_farms_08 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_camel_farms_requirement_terrain = yes
@@ -4211,14 +4803,14 @@ camel_farms_08 = {
 	
 	levy = small_building_levy_tier_8
 	character_modifier = {
-		light_cavalry_damage_add = 8
-		light_cavalry_pursuit_add = 8
-		light_cavalry_toughness_add = 4
-		light_cavalry_screen_add = 4
+		light_cavalry_damage_mult = 0.16
+		light_cavalry_pursuit_mult = 0.16
+		light_cavalry_toughness_mult = 0.08
+		light_cavalry_screen_mult = 0.08
 		knight_limit = 4
-		heavy_cavalry_damage_add = 2
-		heavy_cavalry_toughness_add = 4
-		archers_damage_add = 1
+		heavy_cavalry_damage_mult = 0.04
+		heavy_cavalry_toughness_mult = 0.08
+		archers_damage_mult = 0.02
 		knight_effectiveness_mult = 0.05
 	}
 	
@@ -4231,6 +4823,7 @@ camel_farms_08 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
@@ -4238,6 +4831,10 @@ camel_farms_08 = {
 
 logging_camps_01 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_logging_camps_requirement_terrain = yes
@@ -4261,6 +4858,7 @@ logging_camps_01 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 		modifier = {
 			factor = 0
 			scope:holder = {
@@ -4275,6 +4873,10 @@ logging_camps_01 = {
 
 logging_camps_02 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_logging_camps_requirement_terrain = yes
@@ -4302,11 +4904,17 @@ logging_camps_02 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 logging_camps_03 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_logging_camps_requirement_terrain = yes
@@ -4342,11 +4950,17 @@ logging_camps_03 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 logging_camps_04 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_logging_camps_requirement_terrain = yes
@@ -4383,11 +4997,17 @@ logging_camps_04 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 logging_camps_05 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_logging_camps_requirement_terrain = yes
@@ -4425,11 +5045,17 @@ logging_camps_05 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 logging_camps_06 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_logging_camps_requirement_terrain = yes
@@ -4467,11 +5093,17 @@ logging_camps_06 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 logging_camps_07 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_logging_camps_requirement_terrain = yes
@@ -4509,11 +5141,17 @@ logging_camps_07 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 logging_camps_08 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_logging_camps_requirement_terrain = yes
@@ -4550,6 +5188,8 @@ logging_camps_08 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
@@ -4557,6 +5197,10 @@ logging_camps_08 = {
 
 peat_quarries_01 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_peat_quarries_requirement_terrain = yes
@@ -4580,11 +5224,16 @@ peat_quarries_01 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 peat_quarries_02 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_peat_quarries_requirement_terrain = yes
@@ -4613,11 +5262,17 @@ peat_quarries_02 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 peat_quarries_03 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_peat_quarries_requirement_terrain = yes
@@ -4650,11 +5305,17 @@ peat_quarries_03 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 peat_quarries_04 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_peat_quarries_requirement_terrain = yes
@@ -4688,11 +5349,17 @@ peat_quarries_04 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 peat_quarries_05 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_peat_quarries_requirement_terrain = yes
@@ -4727,11 +5394,17 @@ peat_quarries_05 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 peat_quarries_06 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_peat_quarries_requirement_terrain = yes
@@ -4767,11 +5440,17 @@ peat_quarries_06 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 peat_quarries_07 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_peat_quarries_requirement_terrain = yes
@@ -4807,11 +5486,17 @@ peat_quarries_07 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 peat_quarries_08 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_peat_quarries_requirement_terrain = yes
@@ -4845,6 +5530,8 @@ peat_quarries_08 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
@@ -4852,6 +5539,10 @@ peat_quarries_08 = {
 
 hill_farms_01 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_hill_farms_requirement_terrain = yes
@@ -4874,6 +5565,7 @@ hill_farms_01 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 		modifier = {
 			factor = 0
 			scope:holder = {
@@ -4888,6 +5580,10 @@ hill_farms_01 = {
 
 hill_farms_02 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_hill_farms_requirement_terrain = yes
@@ -4905,21 +5601,28 @@ hill_farms_02 = {
 	
 	province_modifier = {
 		monthly_income = normal_building_tax_tier_2
+		defender_advantage = 1
 	}
 	
 	character_modifier = {
-		pikemen_toughness_add = 1
+		skirmishers_toughness_mult = 0.02
 	}
 	
 	next_building = hill_farms_03
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 hill_farms_03 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_hill_farms_requirement_terrain = yes
@@ -4940,6 +5643,7 @@ hill_farms_03 = {
 	
 	province_modifier = {
 		monthly_income = normal_building_tax_tier_3
+		defender_advantage = 1
 	}
 	
 	county_modifier = {
@@ -4947,18 +5651,24 @@ hill_farms_03 = {
 	}
 	
 	character_modifier = {
-		pikemen_toughness_add = 1
+		skirmishers_toughness_mult = 0.02
 	}
 	
 	next_building = hill_farms_04
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 hill_farms_04 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_hill_farms_requirement_terrain = yes
@@ -4979,25 +5689,32 @@ hill_farms_04 = {
 	
 	province_modifier = {
 		monthly_income = normal_building_tax_tier_4
+		defender_advantage = 2
+	}
+	
+	character_modifier = {
+		skirmishers_toughness_mult = 0.04
 	}
 	
 	county_modifier = {
 		supply_limit = 300
 	}
 	
-	character_modifier = {
-		pikemen_toughness_add = 2
-	}
-	
 	next_building = hill_farms_05
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 hill_farms_05 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_hill_farms_requirement_terrain = yes
@@ -5018,6 +5735,7 @@ hill_farms_05 = {
 	
 	province_modifier = {
 		monthly_income = normal_building_tax_tier_5
+		defender_advantage = 2
 	}
 	
 	county_modifier = {
@@ -5026,18 +5744,24 @@ hill_farms_05 = {
 	}
 	
 	character_modifier = {
-		pikemen_toughness_add = 2
+		skirmishers_toughness_mult = 0.04
 	}
 	
 	next_building = hill_farms_06
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 hill_farms_06 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_hill_farms_requirement_terrain = yes
@@ -5058,6 +5782,7 @@ hill_farms_06 = {
 	
 	province_modifier = {
 		monthly_income = normal_building_tax_tier_6
+		defender_advantage = 2
 	}
 	
 	county_modifier = {
@@ -5067,18 +5792,24 @@ hill_farms_06 = {
 	}
 	
 	character_modifier = {
-		pikemen_toughness_add = 2
+		skirmishers_toughness_mult = 0.04
 	}
 	
 	next_building = hill_farms_07
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 hill_farms_07 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_hill_farms_requirement_terrain = yes
@@ -5099,6 +5830,7 @@ hill_farms_07 = {
 	
 	province_modifier = {
 		monthly_income = normal_building_tax_tier_7
+		defender_advantage = 2
 	}
 	
 	county_modifier = {
@@ -5108,18 +5840,24 @@ hill_farms_07 = {
 	}
 	
 	character_modifier = {
-		pikemen_toughness_add = 2
+		skirmishers_toughness_mult = 0.04
 	}
 	
 	next_building = hill_farms_08
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 hill_farms_08 = {
 	construction_time = standard_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_hill_farms_requirement_terrain = yes
@@ -5140,6 +5878,7 @@ hill_farms_08 = {
 	
 	province_modifier = {
 		monthly_income = normal_building_tax_tier_8
+		defender_advantage = 2
 	}
 	
 	county_modifier = {
@@ -5149,11 +5888,13 @@ hill_farms_08 = {
 	}
 	
 	character_modifier = {
-		pikemen_toughness_add = 2
+		skirmishers_toughness_mult = 0.04
 	}
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
@@ -5161,6 +5902,10 @@ hill_farms_08 = {
 
 elephant_pens_01 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_elephant_pens_requirement_terrain = yes
@@ -5179,7 +5924,7 @@ elephant_pens_01 = {
 	}
 	character_modifier = {
 		knight_effectiveness_mult = 0.02
-		heavy_cavalry_damage_add = 2
+		heavy_cavalry_damage_mult = 0.04
 		knight_limit = 1
 	}
 	
@@ -5189,11 +5934,16 @@ elephant_pens_01 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 elephant_pens_02 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_elephant_pens_requirement_terrain = yes
@@ -5215,7 +5965,7 @@ elephant_pens_02 = {
 	}
 	character_modifier = {
 		knight_effectiveness_mult = 0.04
-		heavy_cavalry_damage_add = 4
+		heavy_cavalry_damage_mult = 0.08
 		knight_limit = 1
 	}
 	
@@ -5223,11 +5973,17 @@ elephant_pens_02 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 elephant_pens_03 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_elephant_pens_requirement_terrain = yes
@@ -5252,9 +6008,9 @@ elephant_pens_03 = {
 	}
 	character_modifier = {
 		knight_effectiveness_mult = 0.06
-		heavy_cavalry_damage_add = 6
+		heavy_cavalry_damage_mult = 0.12
 		knight_limit = 2
-		heavy_cavalry_toughness_add = 4
+		heavy_cavalry_toughness_mult = 0.08
 	}
 	county_modifier = {
 		build_gold_cost = -0.02
@@ -5264,11 +6020,17 @@ elephant_pens_03 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 elephant_pens_04 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_elephant_pens_requirement_terrain = yes
@@ -5293,9 +6055,9 @@ elephant_pens_04 = {
 	}
 	character_modifier = {
 		knight_effectiveness_mult = 0.08
-		heavy_cavalry_damage_add = 8
+		heavy_cavalry_damage_mult = 0.16
 		knight_limit = 2
-		heavy_cavalry_toughness_add = 4
+		heavy_cavalry_toughness_mult = 0.08
 	}
 	county_modifier = {
 		build_gold_cost = -0.02
@@ -5305,11 +6067,17 @@ elephant_pens_04 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 elephant_pens_05 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_elephant_pens_requirement_terrain = yes
@@ -5334,9 +6102,9 @@ elephant_pens_05 = {
 	}
 	character_modifier = {
 		knight_effectiveness_mult = 0.10
-		heavy_cavalry_damage_add = 10
+		heavy_cavalry_damage_mult = 0.2
 		knight_limit = 3
-		heavy_cavalry_toughness_add = 4
+		heavy_cavalry_toughness_mult = 0.08
 	}
 	county_modifier = {
 		build_gold_cost = -0.02
@@ -5346,11 +6114,17 @@ elephant_pens_05 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 elephant_pens_06 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_elephant_pens_requirement_terrain = yes
@@ -5375,9 +6149,9 @@ elephant_pens_06 = {
 	}
 	character_modifier = {
 		knight_effectiveness_mult = 0.12
-		heavy_cavalry_damage_add = 12
+		heavy_cavalry_damage_mult = 0.24
 		knight_limit = 3
-		heavy_cavalry_toughness_add = 6
+		heavy_cavalry_toughness_mult = 0.12
 	}
 	county_modifier = {
 		build_gold_cost = -0.02
@@ -5387,11 +6161,17 @@ elephant_pens_06 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 elephant_pens_07 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_elephant_pens_requirement_terrain = yes
@@ -5416,9 +6196,9 @@ elephant_pens_07 = {
 	}
 	character_modifier = {
 		knight_effectiveness_mult = 0.14
-		heavy_cavalry_damage_add = 14
+		heavy_cavalry_damage_mult = 0.28
 		knight_limit = 4
-		heavy_cavalry_toughness_add = 6
+		heavy_cavalry_toughness_mult = 0.12
 	}
 	county_modifier = {
 		build_gold_cost = -0.02
@@ -5429,11 +6209,17 @@ elephant_pens_07 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 elephant_pens_08 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_elephant_pens_requirement_terrain = yes
@@ -5458,9 +6244,9 @@ elephant_pens_08 = {
 	}
 	character_modifier = {
 		knight_effectiveness_mult = 0.16
-		heavy_cavalry_damage_add = 16
+		heavy_cavalry_damage_mult = 0.32
 		knight_limit = 4
-		heavy_cavalry_toughness_add = 6
+		heavy_cavalry_toughness_mult = 0.12
 	}
 	county_modifier = {
 		build_gold_cost = -0.02
@@ -5469,6 +6255,8 @@ elephant_pens_08 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
@@ -5476,6 +6264,10 @@ elephant_pens_08 = {
 
 plantations_01 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_plantations_requirement_terrain = yes
@@ -5498,6 +6290,7 @@ plantations_01 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 		modifier = {
 			factor = 0
 			building_orchards_requirement_terrain = yes
@@ -5532,6 +6325,10 @@ plantations_01 = {
 plantations_02 = {
 	construction_time = quick_construction_time
 
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
+
 	can_construct_potential = {
 		building_plantations_requirement_terrain = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
@@ -5555,11 +6352,17 @@ plantations_02 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 plantations_03 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_plantations_requirement_terrain = yes
@@ -5583,18 +6386,24 @@ plantations_03 = {
 		tax_mult = 0.01
 	}
 	character_modifier = {
-		light_cavalry_toughness_add = 1
+		light_cavalry_toughness_mult = 0.02
 	}
 	
 	next_building = plantations_04
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 plantations_04 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_plantations_requirement_terrain = yes
@@ -5618,18 +6427,24 @@ plantations_04 = {
 		tax_mult = 0.02
 	}
 	character_modifier = {
-		light_cavalry_toughness_add = 1
+		light_cavalry_toughness_mult = 0.02
 	}
 	
 	next_building = plantations_05
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 plantations_05 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_plantations_requirement_terrain = yes
@@ -5654,7 +6469,7 @@ plantations_05 = {
 		supply_limit = 200
 	}
 	character_modifier = {
-		light_cavalry_toughness_add = 1
+		light_cavalry_toughness_mult = 0.02
 	}
 	county_modifier = {
 		development_growth_factor = 0.02
@@ -5664,11 +6479,17 @@ plantations_05 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 plantations_06 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_plantations_requirement_terrain = yes
@@ -5693,7 +6514,7 @@ plantations_06 = {
 		supply_limit = 400
 	}
 	character_modifier = {
-		light_cavalry_toughness_add = 1
+		light_cavalry_toughness_mult = 0.02
 	}
 	county_modifier = {
 		development_growth_factor = 0.02
@@ -5703,11 +6524,17 @@ plantations_06 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 plantations_07 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_plantations_requirement_terrain = yes
@@ -5732,7 +6559,7 @@ plantations_07 = {
 		supply_limit = 400
 	}
 	character_modifier = {
-		light_cavalry_toughness_add = 1
+		light_cavalry_toughness_mult = 0.02
 	}
 	county_modifier = {
 		development_growth_factor = 0.05
@@ -5742,11 +6569,17 @@ plantations_07 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 plantations_08 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_plantations_requirement_terrain = yes
@@ -5771,7 +6604,7 @@ plantations_08 = {
 		supply_limit = 600
 	}
 	character_modifier = {
-		light_cavalry_toughness_add = 1
+		light_cavalry_toughness_mult = 0.02
 	}
 	county_modifier = {
 		development_growth_factor = 0.05
@@ -5779,6 +6612,8 @@ plantations_08 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
@@ -5786,6 +6621,10 @@ plantations_08 = {
 
 quarries_01 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_quarries_requirement_terrain = yes
@@ -5809,6 +6648,7 @@ quarries_01 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 		modifier = {
 			factor = 0
 			scope:holder = {
@@ -5823,6 +6663,10 @@ quarries_01 = {
 
 quarries_02 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_quarries_requirement_terrain = yes
@@ -5850,11 +6694,17 @@ quarries_02 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 quarries_03 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_quarries_requirement_terrain = yes
@@ -5888,11 +6738,17 @@ quarries_03 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 quarries_04 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_quarries_requirement_terrain = yes
@@ -5927,11 +6783,17 @@ quarries_04 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 quarries_05 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_quarries_requirement_terrain = yes
@@ -5966,11 +6828,17 @@ quarries_05 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 quarries_06 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_quarries_requirement_terrain = yes
@@ -6006,11 +6874,17 @@ quarries_06 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 quarries_07 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_quarries_requirement_terrain = yes
@@ -6040,19 +6914,25 @@ quarries_07 = {
 	}
 	character_modifier = {
 		men_at_arms_maintenance = -0.02
-		heavy_infantry_toughness_add = 1
-		pikemen_toughness_add = 1
+		heavy_infantry_toughness_mult = 0.02
+		pikemen_toughness_mult = 0.02
 	}
 	
 	next_building = quarries_08
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
 quarries_08 = {
 	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_quarries_requirement_terrain = yes
@@ -6082,13 +6962,15 @@ quarries_08 = {
 	}
 	character_modifier = {
 		men_at_arms_maintenance = -0.02
-		heavy_infantry_toughness_add = 2
-		pikemen_toughness_add = 2
-		heavy_cavalry_toughness_add = 4
+		heavy_infantry_toughness_mult = 0.04
+		pikemen_toughness_mult = 0.04
+		heavy_cavalry_toughness_mult = 0.08
 	}
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
@@ -6096,6 +6978,10 @@ quarries_08 = {
 
 hill_forts_01 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_hill_forts_requirement_terrain = yes
@@ -6120,6 +7006,12 @@ hill_forts_01 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
+		modifier = {
+			factor = 5
+			free_building_slots <= 3
+			scope:holder.capital_province = this
+		}
 		modifier = {
 			factor = 5
 			free_building_slots <= 2
@@ -6133,6 +7025,10 @@ hill_forts_01 = {
 
 hill_forts_02 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_hill_forts_requirement_terrain = yes
@@ -6161,11 +7057,16 @@ hill_forts_02 = {
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 hill_forts_03 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_hill_forts_requirement_terrain = yes
@@ -6193,18 +7094,23 @@ hill_forts_03 = {
 		monthly_county_control_change_factor = 0.1
 	}
 	character_modifier = {
-		pikemen_toughness_add = 1
+		pikemen_toughness_mult = 0.02
 	}
 	
 	next_building = hill_forts_04
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 hill_forts_04 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_hill_forts_requirement_terrain = yes
@@ -6233,18 +7139,23 @@ hill_forts_04 = {
 		levy_size = 0.02
 	}
 	character_modifier = {
-		pikemen_toughness_add = 1
+		pikemen_toughness_mult = 0.02
 	}
 	
 	next_building = hill_forts_05
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 hill_forts_05 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_hill_forts_requirement_terrain = yes
@@ -6273,18 +7184,23 @@ hill_forts_05 = {
 		levy_size = 0.02
 	}
 	character_modifier = {
-		pikemen_toughness_add = 1
+		pikemen_toughness_mult = 0.02
 	}
 	
 	next_building = hill_forts_06
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 hill_forts_06 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_hill_forts_requirement_terrain = yes
@@ -6313,19 +7229,24 @@ hill_forts_06 = {
 		levy_size = 0.02
 	}
 	character_modifier = {
-		pikemen_damage_add = 2
-		pikemen_toughness_add = 1
+		pikemen_damage_mult = 0.04
+		pikemen_toughness_mult = 0.02
 	}
 	
 	next_building = hill_forts_07
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 hill_forts_07 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_hill_forts_requirement_terrain = yes
@@ -6354,19 +7275,24 @@ hill_forts_07 = {
 		levy_size = 0.02
 	}
 	character_modifier = {
-		pikemen_damage_add = 2
-		pikemen_toughness_add = 2
+		pikemen_damage_mult = 0.04
+		pikemen_toughness_mult = 0.04
 	}
 	
 	next_building = hill_forts_08
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
 
 hill_forts_08 = {
 	construction_time = slow_construction_time
+
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit_trigger = yes
+	}
 
 	can_construct_potential = {
 		building_hill_forts_requirement_terrain = yes
@@ -6395,11 +7321,12 @@ hill_forts_08 = {
 		levy_size = 0.02
 	}
 	character_modifier = {
-		pikemen_damage_add = 2
-		pikemen_toughness_add = 2
+		pikemen_damage_mult = 0.04
+		pikemen_toughness_mult = 0.04
 	}
 	
 	ai_value = {
 		base = 500
+		ai_general_building_modifier = yes
 	}
 }
